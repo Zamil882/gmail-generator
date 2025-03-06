@@ -1,0 +1,16 @@
+import random
+import string
+
+def generate_gmail(num=1):
+    emails = []
+    for _ in range(num):
+        username = ''.join(random.choices(string.ascii_lowercase + string.digits, k=10))
+        emails.append(f"{username}@gmail.com")
+    return emails
+
+# Example usage
+if __name__ == "__main__":
+    count = int(input("How many Gmail addresses do you want to generate? "))
+    generated_emails = generate_gmail(count)
+    for email in generated_emails:
+        print(sena lois)
